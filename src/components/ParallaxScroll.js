@@ -4,7 +4,7 @@ import ImageGrid from './ImageGrid';
 import './ParallaxScroll.css';
 
 const ParallaxScroll = ({ scrollY }) => {
-  const [visibleSections, setVisibleSections] = useState(new Set());
+  const [visibleSections, setVisibleSections] = useState(() => new Set([0]));
   const observerRef = useRef(null);
 
   useEffect(() => {
@@ -17,7 +17,7 @@ const ParallaxScroll = ({ scrollY }) => {
           }
         });
       },
-      { threshold: 1 }
+      { threshold: 0.2 }
     );
 
     observerRef.current = observer;
@@ -41,20 +41,14 @@ const ParallaxScroll = ({ scrollY }) => {
               }
             }}
           >
-            <div 
-              className="section-image"
-              style={{
-                backgroundImage: `url(${milestone.image})`,
-                opacity: Math.min(1, opacity + 0.3),
-              }}
-            />
-
             {isVisible && (
-              <div className="section-wrapper in-view">
+              <div 
+                className="section-wrapper in-view"
+              >
                 <div className="section-content">
                   <div className="content-inner">
                     <div className="card-text in-view">
-                      <h2 className="section-title">{milestone.title}</h2>
+                      <h2 className="section-title cursive">{milestone.title}</h2>
                       <p className="section-description">{milestone.description}</p>
                     </div>
 

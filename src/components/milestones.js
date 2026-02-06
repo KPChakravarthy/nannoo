@@ -1,86 +1,118 @@
+import shoot1 from '../assets/pre-wedding/shoot1.webp';
+import shoot2 from '../assets/pre-wedding/shoot2.webp';
+import shoot3 from '../assets/pre-wedding/shoot3.webp';
+import shoot4 from '../assets/pre-wedding/shoot4.webp';
+import engaged from '../assets/pre-wedding/engaged.webp';
+import wedding1 from '../assets/wedding/wedding1.webp';
+import wedding2 from '../assets/wedding/wedding2.webp';
+import wedding3 from '../assets/wedding/wedding3.webp';
+import wedding4 from '../assets/wedding/wedding4.webp';
+import baby1 from '../assets/baby/baby1.webp';
+import baby2 from '../assets/baby/baby2.webp';
+import baby3 from '../assets/baby/baby3.webp';
+import baby4 from '../assets/baby/baby4.webp';
+import baby5 from '../assets/baby/baby5.webp';
+import baby6 from '../assets/baby/baby6.webp';
+import baby7 from '../assets/baby/baby7.webp';
+import baby8 from '../assets/baby/baby8.webp';
+import baby9 from '../assets/baby/baby9.webp';
+import baby10 from '../assets/baby/baby10.webp';
+import trip2 from '../assets/trips/trip2.webp';
+import trip3 from '../assets/trips/trip3.webp';
+import trip4 from '../assets/trips/trip4.webp';
+import trip5 from '../assets/trips/trip5.webp';
+import trip6 from '../assets/trips/trip6.webp';
+import trip7 from '../assets/trips/trip7.webp';
+import trip8 from '../assets/trips/trip8.webp';
+import trip9 from '../assets/trips/trip9.webp';
+import trip10 from '../assets/trips/trip10.webp';
+import trip11 from '../assets/trips/trip11.webp';
+import together1 from '../assets/together/together1.webp';
+import together2 from '../assets/together/together2.webp';
+import together3 from '../assets/together/together3.webp';
+import together4 from '../assets/together/together4.webp';
+import together5 from '../assets/together/together5.webp';
+import together6 from '../assets/together/together6.webp';
+import together7 from '../assets/together/together7.webp';
+
 export const milestones = [
   {
-    title: 'Our First Date',
-    description: 'We met for coffee and talked for hours. It was magical.',
-    image: '',
+    title: 'When Forever First Smiled at Us',
+    description:
+      'Before the vows, before the plans, before we even realized how deeply our lives would intertwine — there was this spark. Soft laughter, shy glances, and a quiet knowing in my heart that something extraordinary had begun. Those moments weren’t just captured in photos… they were the universe gently introducing me to my forever.',
+    image: shoot1,
     gallery: [
-      'https://images.unsplash.com/photo-1514432324607-2e4c9ad629d0?w=800&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1515442141207-5dca89f118e5?w=800&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1514889286974-6c03bf1bfd00?w=800&h=800&fit=crop'
+      shoot1,
+      shoot2,
+      shoot3,
+      shoot4,
     ]
   },
   {
-    title: 'Valentine\'s Day',
-    description: 'You surprised me with a beautiful bouquet of roses.',
-    image: '',
+    title: 'The Day I Married My Best Decision',
+    description:
+      'Amid sacred chants, the warmth of the agni, and the rhythm of ancient vows, we took our sapthapadi — seven steps into one shared life. With every blessing and every smile around us, I wasn’t just marrying you; I was stepping into a lifelong journey as your partner, your supporter, your equal. That moment didn’t just unite us — it gave my heart its truest sense of belonging.',
+    image: engaged,
     gallery: [
-      'https://images.unsplash.com/photo-1518895949257-7621c3c786d7?w=800&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?w=800&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1478895143817-1e967b1f0248?w=800&h=800&fit=crop'
+      engaged,
+      wedding1,
+      wedding2,
+      wedding3,
+      wedding4,
     ]
   },
   {
-    title: 'Our First Trip',
-    description: 'We went to the beach and had the most amazing time.',
-    image: '',
+    title: 'Love, Now With Tiny Footprints',
+    description:
+      'Then love grew louder, smaller, sweeter — wrapped in tiny hands and sleepy giggles. Watching you step into parenthood filled me with awe; your strength, your tenderness, your endless care… it made me fall for you in brand-new ways. Our home gained toys on the floor, laughter in the air, and a joy that multiplied beyond measure.',
+    image: baby1,
     gallery: [
-      'https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=800&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1502920917128-1aa500764b07?w=800&h=800&fit=crop'
+      baby1,
+      baby2,
+      baby3,
+      baby4,
+      baby5,
+      baby6,
+      baby7,
+      baby8,
+      baby9,
+      baby10,
     ]
   },
   {
-    title: 'Finding Out',
-    description: 'The happiest moment of our lives - we were going to be parents.',
-    image: '',
+    title: 'Collecting Sunsets Together',
+    description:
+      'Miles traveled, playlists sung badly, directions occasionally ignored — and memories created everywhere in between. Whether it was grand adventures or quiet stolen moments, each journey became special because you were there. You’re my favorite co-conspirator, my navigator through life, and the destination I’d choose every single time.',
+    image: trip11,
     gallery: [
-      'https://images.unsplash.com/photo-1516627145497-ae6968895b2f?w=800&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1520975911467-3b4e2f6f3a3e?w=800&h=800&fit=crop'
+      trip2,
+      trip3,
+      trip4,
+      trip5,
+      trip6,
+      trip7,
+      trip8,
+      trip9,
+      trip10,
+      trip11,
+      together1,
+      together2,
+      together3,
+      together4,
+      together5,
+      together6,
+      together7,
     ]
   },
   {
-    title: 'Baby Arrives',
-    description: 'Our beautiful family grew by one. The greatest gift.',
-    image: '',
-    gallery: [
-      'https://images.unsplash.com/photo-1555627881-44d282e8a17c?w=800&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1527181152855-fc03fc7949c8?w=800&h=800&fit=crop'
-    ]
-  },
-  {
-    title: 'Our One-Year Anniversary',
-    description: 'We celebrated a year of love and laughter.',
-    image: '',
-    gallery: [
-      'https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=800&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1491553895911-0055eca6402d?w=800&h=800&fit=crop'
-    ]
-  },
-  {
-    title: 'First Family Adventure',
-    description: 'Our little one\'s first beach day - pure joy and endless memories.',
-    image: '',
-    gallery: [
-      'https://images.unsplash.com/photo-1503454537688-e6baaf4dbf10?w=800&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1519710164239-da123dc03ef4?w=800&h=800&fit=crop'
-    ]
-  },
-  {
-    title: 'Our First Family Christmas',
-    description: 'Nothing beats Christmas with our growing family.',
-    image: '',
-    gallery: [
-      'https://images.unsplash.com/photo-1512138249d0-1a07dd25a344?w=800&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1519677100203-a0e668c92439?w=800&h=800&fit=crop'
-    ]
-  },
-  {
-    title: 'Three Years Strong',
-    description: 'Still madly in love, with an amazing little one by our side.',
-    image: '',
-    gallery: [
-      'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&h=800&fit=crop',
-      'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&h=800&fit=crop'
-    ]
+    title: 'And Somehow… I Love You More',
+    description:
+      'After everything we’ve lived, laughed through, built, and dreamed — I’m still discovering new reasons to adore you. In quiet glances, silly jokes, shared exhaustion, and small everyday victories. Loving you isn’t just a chapter in my life story — it’s the theme that runs through every page. And the best part? We’re still writing it together.',
+      image: together7,
+      gallery: [
+        shoot1,
+        engaged,
+        baby1
+      ]
   },
 ];

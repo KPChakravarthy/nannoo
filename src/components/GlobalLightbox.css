@@ -12,17 +12,23 @@
 
 .global-lightbox-content {
   position: relative;
-  max-width: 90%;
-  max-height: 90%;
+  max-width: 95vw !important;
+  max-height: 95vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   animation: scaleInContent 0.3s ease-out;
 }
 
 .global-lightbox-content img {
-  width: 100%;
+  max-width: 100% !important;
+  max-height: 100% !important;
+  width: auto;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
   display: block;
+  object-fit: contain;
 }
 
 .global-lightbox-close,
@@ -32,7 +38,7 @@
   background: transparent;
   border: none;
   color: #e85a80;
-  font-size: 2rem;
+  font-size: 25px;
   cursor: pointer;
   transition: color 0.2s ease, transform 0.2s ease;
   padding: 0;
@@ -45,7 +51,7 @@
 .global-lightbox-close {
   right: 20px;
   top: 20px;
-  font-size: 2.5rem;
+  font-size: 25px;
 }
 
 .global-lightbox-prev {
