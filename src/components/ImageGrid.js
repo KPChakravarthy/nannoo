@@ -50,9 +50,14 @@ const ImageGrid = ({ images = [] }) => {
               aria-label="Open photo 3"
             />
             {hasMore && (
-              <div className="overlay-count">
+              <button
+                type="button"
+                className="overlay-count"
+                onClick={() => openAt(2)}
+                aria-label={`Open ${images.length - 3} more photos`}
+              >
                 +{images.length - 3}
-              </div>
+              </button>
             )}
           </div>
         )}

@@ -31,7 +31,7 @@ function App() {
         
         <header className="App-header">
           <h1 className="cursive">Nannoo meri jaan</h1>
-          <p className="header-subtitle">A Journey Through Time</p>
+          <p className="header-subtitle">Forever, One Moment at a Time</p>
         </header>
         
         <main>
@@ -39,7 +39,7 @@ function App() {
         </main>
 
         <footer className="App-footer">
-          <p>Cherished Moments</p>
+          <p className='cursive'>Tu mera kurbaan </p>
         </footer>
 
         <GlobalLightbox />

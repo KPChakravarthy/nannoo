@@ -1,9 +1,29 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useLightbox } from '../contexts/LightboxContext';
 import './GlobalLightbox.css';
 
 const GlobalLightbox = () => {
   const { lightbox, close, prev, next } = useLightbox();
+
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === 'ArrowLeft') {
+        prev();
+      } else if (e.key === 'ArrowRight') {
+        next();
+      } else if (e.key === 'Escape') {
+        close();
+      }
+    };
+
+    if (lightbox.isOpen) {
+      window.addEventListener('keydown', handleKeyDown);
+    }
+
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [lightbox.isOpen, prev, next, close]);
 
   if (!lightbox.isOpen || !lightbox.images || lightbox.images.length === 0) {
     return null;
