@@ -85,7 +85,6 @@ export const milestones = [
       'Miles traveled, playlists sung badly, directions occasionally ignored — and memories created everywhere in between. Whether it was grand adventures or quiet stolen moments, each journey became special because you were there. You’re my favorite co-conspirator, my navigator through life, and the destination I’d choose every single time.',
     image: trip11,
     gallery: [
-      trip2,
       trip3,
       trip4,
       trip5,

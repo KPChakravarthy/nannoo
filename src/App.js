@@ -4,9 +4,11 @@ import FloatingHearts from './components/FloatingHearts';
 import ParallaxScroll from './components/ParallaxScroll';
 import GlobalLightbox from './components/GlobalLightbox';
 import { LightboxProvider } from './contexts/LightboxContext';
+import EntryScreen from './components/EntryScreen';
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -18,33 +20,38 @@ function App() {
   }, []);
 
   return (
-    <LightboxProvider>
-      <div className="App">
-        <div
-          className="bg-parallax"
-          style={{
-            transform: `translateY(${scrollY * 0.06}px)`,
-          }}
-        />
+    <>
+      {!isAuthenticated && (
+        <EntryScreen onAuthenticated={() => setIsAuthenticated(true)} />
+      )}
+      <LightboxProvider>
+        <div className="App">
+          <div
+            className="bg-parallax"
+            style={{
+              transform: `translateY(${scrollY * 0.06}px)`,
+            }}
+          />
 
-        <FloatingHearts />
-        
-        <header className="App-header">
-          <h1 className="cursive">Nannoo meri jaan</h1>
-          <p className="header-subtitle">Forever, One Moment at a Time</p>
-        </header>
-        
-        <main>
-          <ParallaxScroll scrollY={scrollY} />
-        </main>
+          <FloatingHearts />
+          
+          <header className="App-header">
+            <h1 className="cursive">Nannoo meri jaan</h1>
+            <p className="header-subtitle">Forever, One Moment at a Time</p>
+          </header>
+          
+          <main>
+            <ParallaxScroll scrollY={scrollY} />
+          </main>
 
-        <footer className="App-footer">
-          <p className='cursive'>Tu mera kurbaan </p>
-        </footer>
+          <footer className="App-footer">
+            <p className='cursive'>Tu mera kurbaan </p>
+          </footer>
 
-        <GlobalLightbox />
-      </div>
-    </LightboxProvider>
+          <GlobalLightbox />
+        </div>
+      </LightboxProvider>
+    </>
   );
 }
 
